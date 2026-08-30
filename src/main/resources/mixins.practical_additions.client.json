@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.danako.practical_additions.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "AbstractClientPlayerFovMixin",
+    "ClientLevelMixin",
+    "SoundEngineOcclusionMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
