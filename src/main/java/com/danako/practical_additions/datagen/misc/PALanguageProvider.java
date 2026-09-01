@@ -182,6 +182,9 @@ public class PALanguageProvider extends LanguageProvider {
         add("config." + PracticalAdditions.MODID + ".show_item_properties", "Show Item Properties");
         add("config." + PracticalAdditions.MODID + ".show_item_properties.tooltip", "Whether the CTRL+SHIFT debug info includes curated item/block properties.");
 
+        add("config." + PracticalAdditions.MODID + ".disable_modded_items_in_vanilla_tabs", "Disable Modded Items In Vanilla Tabs");
+        add("config." + PracticalAdditions.MODID + ".disable_modded_items_in_vanilla_tabs.tooltip", "When enabled, Practical Additions items will not appear in vanilla creative mode tabs. They will still be available in the Practical Additions tab.");
+
         add("config." + PracticalAdditions.MODID + ".show_prop_general", "General Properties");
         add("config." + PracticalAdditions.MODID + ".show_prop_general.tooltip", "Max stack size, rarity, durability, and repair cost.");
 

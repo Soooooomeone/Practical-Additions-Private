@@ -4,9 +4,9 @@ package com.danako.practical_additions;
 import com.danako.practical_additions.client.inventory.backpack.PABackpackClient;
 import com.danako.practical_additions.config.PAConfig;
 import com.danako.practical_additions.datagen.DataGenerators;
-import com.danako.practical_additions.init.*;
-import com.danako.practical_additions.init.creative_tab.PACreativeModeTabs;
-import com.danako.practical_additions.init.creative_tab.PACreativeTabAdditions;
+import com.danako.practical_additions.init.PABlocks;
+import com.danako.practical_additions.init.PAItems;
+import com.danako.practical_additions.init.creative_tab.PracticalTabs;
 import com.danako.practical_additions.init.data_components.BackpackComponents;
 import com.danako.practical_additions.init.data_components.PADataComponents;
 import com.danako.practical_additions.init.event_handler.PAEventsHandler;
@@ -42,14 +42,13 @@ public class PracticalAdditions {
         BLOCKS.register(modEventBus);
         ITEMS.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
-        PACreativeTabAdditions.register(modEventBus);
         PADataComponents.register(modEventBus);
         BackpackComponents.register(modEventBus);
         PAMenuTypes.register(modEventBus);
         PABackpackClient.register(modEventBus);
         PABlocks.register();
         PAItems.register();
-        PACreativeModeTabs.register();
+        PracticalTabs.register(modEventBus);
         PAEventsHandler.register();
 
         NeoForge.EVENT_BUS.register(this);

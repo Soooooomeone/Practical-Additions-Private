@@ -26,6 +26,13 @@ public class PAConfig {
             .translation("config." + PracticalAdditions.MODID + ".show_item_properties")
             .define("showItemProperties", true);
 
+    public static final ModConfigSpec.BooleanValue DISABLE_MODDED_ITEMS_IN_VANILLA_TABS = COMMON_BUILDER
+            .comment("If true, Practical Additions items will NOT be inserted into vanilla creative mode tabs " +
+                    "(Tools & Utilities, Combat, Natural Blocks, Building Blocks, Ingredients, etc). " +
+                    "They will still be available in the dedicated Practical Additions tab.")
+            .translation("config." + PracticalAdditions.MODID + ".disable_modded_items_in_vanilla_tabs")
+            .define("disableModdedItemsInVanillaTabs", false);
+
     public static final ModConfigSpec.BooleanValue SHOW_PROP_GENERAL;
     public static final ModConfigSpec.BooleanValue SHOW_PROP_ENCHANTABILITY;
     public static final ModConfigSpec.BooleanValue SHOW_PROP_COMBAT;

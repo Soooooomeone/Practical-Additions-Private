@@ -8,6 +8,8 @@
   "block.practical_additions.lead_ore": "Lead Ore",
   "block.practical_additions.raw_cobalt_block": "Block of Raw Cobalt",
   "block.practical_additions.raw_lead_block": "Block of Raw Lead",
+  "config.practical_additions.disable_modded_items_in_vanilla_tabs": "Disable Modded Items In Vanilla Tabs",
+  "config.practical_additions.disable_modded_items_in_vanilla_tabs.tooltip": "When enabled, Practical Additions items will not appear in vanilla creative mode tabs. They will still be available in the Practical Additions tab.",
   "config.practical_additions.enable_debug_tooltips": "Enable Debug Tooltips",
   "config.practical_additions.enable_debug_tooltips.tooltip": "When enabled, item tooltips show a hint to press CTRL+SHIFT. Holding CTRL+SHIFT while hovering over an item displays extra debug info, per the settings below.",
   "config.practical_additions.show_item_properties": "Show Item Properties",
