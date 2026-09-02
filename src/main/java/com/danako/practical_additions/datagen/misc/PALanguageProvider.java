@@ -1,8 +1,8 @@
 package com.danako.practical_additions.datagen.misc;
 
 import com.danako.practical_additions.PracticalAdditions;
-import com.danako.practical_additions.init.PABlocks;
-import com.danako.practical_additions.init.PAItems;
+import com.danako.practical_additions.core.PracticalBlocks;
+import com.danako.practical_additions.core.PracticalItems;
 
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.LanguageProvider;
@@ -17,146 +17,146 @@ public class PALanguageProvider extends LanguageProvider {
     protected void addTranslations() {
         add("itemGroup." + PracticalAdditions.MODID, "Practical Additions");
 
-        addBlock(PABlocks.LEAD_ORE, "Lead Ore");
-        addBlock(PABlocks.DEEPSLATE_LEAD_ORE, "Deepslate Lead Ore");
-        addBlock(PABlocks.RAW_LEAD_BLOCK, "Block of Raw Lead");
-        addBlock(PABlocks.LEAD_BLOCK, "Block of Lead");
-        addBlock(PABlocks.DENSE_WEIGHTED_PRESSURE_PLATE, "Dense Weighted Pressure Plate");
+        addBlock(PracticalBlocks.LEAD_ORE, "Lead Ore");
+        addBlock(PracticalBlocks.DEEPSLATE_LEAD_ORE, "Deepslate Lead Ore");
+        addBlock(PracticalBlocks.RAW_LEAD_BLOCK, "Block of Raw Lead");
+        addBlock(PracticalBlocks.LEAD_BLOCK, "Block of Lead");
+        addBlock(PracticalBlocks.DENSE_WEIGHTED_PRESSURE_PLATE, "Dense Weighted Pressure Plate");
 
-        addBlock(PABlocks.COBALT_ORE, "Cobalt Ore");
-        addBlock(PABlocks.DEEPSLATE_COBALT_ORE, "Deepslate Cobalt Ore");
-        addBlock(PABlocks.RAW_COBALT_BLOCK, "Block of Raw Cobalt");
-        addBlock(PABlocks.COBALT_BLOCK, "Block of Cobalt");
+        addBlock(PracticalBlocks.COBALT_ORE, "Cobalt Ore");
+        addBlock(PracticalBlocks.DEEPSLATE_COBALT_ORE, "Deepslate Cobalt Ore");
+        addBlock(PracticalBlocks.RAW_COBALT_BLOCK, "Block of Raw Cobalt");
+        addBlock(PracticalBlocks.COBALT_BLOCK, "Block of Cobalt");
 
-        addItem(PAItems.LEAD_INGOT, "Lead Ingot");
-        addItem(PAItems.RAW_LEAD, "Raw Lead");
-        addItem(PAItems.LEAD_NUGGET, "Lead Nugget");
+        addItem(PracticalItems.LEAD_INGOT, "Lead Ingot");
+        addItem(PracticalItems.RAW_LEAD, "Raw Lead");
+        addItem(PracticalItems.LEAD_NUGGET, "Lead Nugget");
 
-        addItem(PAItems.COBALT_INGOT, "Cobalt Ingot");
-        addItem(PAItems.RAW_COBALT, "Raw Cobalt");
-        addItem(PAItems.COBALT_NUGGET, "Cobalt Nugget");
+        addItem(PracticalItems.COBALT_INGOT, "Cobalt Ingot");
+        addItem(PracticalItems.RAW_COBALT, "Raw Cobalt");
+        addItem(PracticalItems.COBALT_NUGGET, "Cobalt Nugget");
 
-        addItem(PAItems.LEAD_SWORD, "Lead Sword");
-        addItem(PAItems.LEAD_SPEAR, "Lead Spear");
-        addItem(PAItems.LEAD_PICKAXE, "Lead Pickaxe");
-        addItem(PAItems.LEAD_AXE, "Lead Axe");
-        addItem(PAItems.LEAD_SHOVEL, "Lead Shovel");
-        addItem(PAItems.LEAD_HOE, "Lead Hoe");
+        addItem(PracticalItems.LEAD_SWORD, "Lead Sword");
+        addItem(PracticalItems.LEAD_SPEAR, "Lead Spear");
+        addItem(PracticalItems.LEAD_PICKAXE, "Lead Pickaxe");
+        addItem(PracticalItems.LEAD_AXE, "Lead Axe");
+        addItem(PracticalItems.LEAD_SHOVEL, "Lead Shovel");
+        addItem(PracticalItems.LEAD_HOE, "Lead Hoe");
 
-        addItem(PAItems.COBALT_SWORD, "Cobalt Sword");
-        addItem(PAItems.COBALT_SPEAR, "Cobalt Spear");
-        addItem(PAItems.COBALT_BOW, "Cobalt Bow");
-        addItem(PAItems.COBALT_PICKAXE, "Cobalt Pickaxe");
-        addItem(PAItems.COBALT_AXE, "Cobalt Axe");
-        addItem(PAItems.COBALT_SHOVEL, "Cobalt Shovel");
-        addItem(PAItems.COBALT_HOE, "Cobalt Hoe");
+        addItem(PracticalItems.COBALT_SWORD, "Cobalt Sword");
+        addItem(PracticalItems.COBALT_SPEAR, "Cobalt Spear");
+        addItem(PracticalItems.COBALT_BOW, "Cobalt Bow");
+        addItem(PracticalItems.COBALT_PICKAXE, "Cobalt Pickaxe");
+        addItem(PracticalItems.COBALT_AXE, "Cobalt Axe");
+        addItem(PracticalItems.COBALT_SHOVEL, "Cobalt Shovel");
+        addItem(PracticalItems.COBALT_HOE, "Cobalt Hoe");
 
-        addItem(PAItems.LEAD_HELMET, "Lead Helmet");
-        addItem(PAItems.LEAD_CHESTPLATE, "Lead Chestplate");
-        addItem(PAItems.LEAD_LEGGINGS, "Lead Leggings");
-        addItem(PAItems.LEAD_BOOTS, "Lead Boots");
+        addItem(PracticalItems.LEAD_HELMET, "Lead Helmet");
+        addItem(PracticalItems.LEAD_CHESTPLATE, "Lead Chestplate");
+        addItem(PracticalItems.LEAD_LEGGINGS, "Lead Leggings");
+        addItem(PracticalItems.LEAD_BOOTS, "Lead Boots");
 
-        addItem(PAItems.COBALT_HELMET, "Cobalt Helmet");
-        addItem(PAItems.COBALT_CHESTPLATE, "Cobalt Chestplate");
-        addItem(PAItems.COBALT_LEGGINGS, "Cobalt Leggings");
-        addItem(PAItems.COBALT_BOOTS, "Cobalt Boots");
+        addItem(PracticalItems.COBALT_HELMET, "Cobalt Helmet");
+        addItem(PracticalItems.COBALT_CHESTPLATE, "Cobalt Chestplate");
+        addItem(PracticalItems.COBALT_LEGGINGS, "Cobalt Leggings");
+        addItem(PracticalItems.COBALT_BOOTS, "Cobalt Boots");
 
-        addItem(PAItems.LEAD_HORSE_ARMOR, "Lead Horse Armor");
-        addItem(PAItems.LEAD_NAUTILUS_ARMOR, "Lead Nautilus Armor");
+        addItem(PracticalItems.LEAD_HORSE_ARMOR, "Lead Horse Armor");
+        addItem(PracticalItems.LEAD_NAUTILUS_ARMOR, "Lead Nautilus Armor");
 
-        addItem(PAItems.COBALT_HORSE_ARMOR, "Cobalt Horse Armor");
-        addItem(PAItems.COBALT_NAUTILUS_ARMOR, "Cobalt Nautilus Armor");
+        addItem(PracticalItems.COBALT_HORSE_ARMOR, "Cobalt Horse Armor");
+        addItem(PracticalItems.COBALT_NAUTILUS_ARMOR, "Cobalt Nautilus Armor");
 
-        addItem(PAItems.GOLDEN_HAMMER, "Golden Hammer");
-        addItem(PAItems.COPPER_HAMMER, "Copper Hammer");
-        addItem(PAItems.LEAD_HAMMER, "Lead Hammer");
-        addItem(PAItems.IRON_HAMMER, "Iron Hammer");
-        addItem(PAItems.COBALT_HAMMER, "Cobalt Hammer");
-        addItem(PAItems.DIAMOND_HAMMER, "Diamond Hammer");
-        addItem(PAItems.NETHERITE_HAMMER, "Netherite Hammer");
+        addItem(PracticalItems.GOLDEN_HAMMER, "Golden Hammer");
+        addItem(PracticalItems.COPPER_HAMMER, "Copper Hammer");
+        addItem(PracticalItems.LEAD_HAMMER, "Lead Hammer");
+        addItem(PracticalItems.IRON_HAMMER, "Iron Hammer");
+        addItem(PracticalItems.COBALT_HAMMER, "Cobalt Hammer");
+        addItem(PracticalItems.DIAMOND_HAMMER, "Diamond Hammer");
+        addItem(PracticalItems.NETHERITE_HAMMER, "Netherite Hammer");
 
-        addItem(PAItems.GOLDEN_EXCAVATOR, "Golden Excavator");
-        addItem(PAItems.COPPER_EXCAVATOR, "Copper Excavator");
-        addItem(PAItems.LEAD_EXCAVATOR, "Lead Excavator");
-        addItem(PAItems.IRON_EXCAVATOR, "Iron Excavator");
-        addItem(PAItems.COBALT_EXCAVATOR, "Cobalt Excavator");
-        addItem(PAItems.DIAMOND_EXCAVATOR, "Diamond Excavator");
-        addItem(PAItems.NETHERITE_EXCAVATOR, "Netherite Excavator");
+        addItem(PracticalItems.GOLDEN_EXCAVATOR, "Golden Excavator");
+        addItem(PracticalItems.COPPER_EXCAVATOR, "Copper Excavator");
+        addItem(PracticalItems.LEAD_EXCAVATOR, "Lead Excavator");
+        addItem(PracticalItems.IRON_EXCAVATOR, "Iron Excavator");
+        addItem(PracticalItems.COBALT_EXCAVATOR, "Cobalt Excavator");
+        addItem(PracticalItems.DIAMOND_EXCAVATOR, "Diamond Excavator");
+        addItem(PracticalItems.NETHERITE_EXCAVATOR, "Netherite Excavator");
 
-        addItem(PAItems.GOLDEN_SICKLE, "Golden Sickle");
-        addItem(PAItems.COPPER_SICKLE, "Copper Sickle");
-        addItem(PAItems.LEAD_SICKLE, "Lead Sickle");
-        addItem(PAItems.IRON_SICKLE, "Iron Sickle");
-        addItem(PAItems.COBALT_SICKLE, "Cobalt Sickle");
-        addItem(PAItems.DIAMOND_SICKLE, "Diamond Sickle");
-        addItem(PAItems.NETHERITE_SICKLE, "Netherite Sickle");
+        addItem(PracticalItems.GOLDEN_SICKLE, "Golden Sickle");
+        addItem(PracticalItems.COPPER_SICKLE, "Copper Sickle");
+        addItem(PracticalItems.LEAD_SICKLE, "Lead Sickle");
+        addItem(PracticalItems.IRON_SICKLE, "Iron Sickle");
+        addItem(PracticalItems.COBALT_SICKLE, "Cobalt Sickle");
+        addItem(PracticalItems.DIAMOND_SICKLE, "Diamond Sickle");
+        addItem(PracticalItems.NETHERITE_SICKLE, "Netherite Sickle");
 
-        addItem(PAItems.EMERALD_SWORD, "Emerald Sword");
-        addItem(PAItems.EMERALD_SPEAR, "Emerald Spear");
-        addItem(PAItems.EMERALD_PICKAXE, "Emerald Pickaxe");
-        addItem(PAItems.EMERALD_AXE, "Emerald Axe");
-        addItem(PAItems.EMERALD_SHOVEL, "Emerald Shovel");
-        addItem(PAItems.EMERALD_HOE, "Emerald Hoe");
-        addItem(PAItems.EMERALD_HELMET, "Emerald Helmet");
-        addItem(PAItems.EMERALD_CHESTPLATE, "Emerald Chestplate");
-        addItem(PAItems.EMERALD_LEGGINGS, "Emerald Leggings");
-        addItem(PAItems.EMERALD_BOOTS, "Emerald Boots");
-        addItem(PAItems.EMERALD_HORSE_ARMOR, "Emerald Horse Armor");
-        addItem(PAItems.EMERALD_NAUTILUS_ARMOR, "Emerald Nautilus Armor");
-        addItem(PAItems.EMERALD_HAMMER, "Emerald Hammer");
-        addItem(PAItems.EMERALD_EXCAVATOR, "Emerald Excavator");
-        addItem(PAItems.EMERALD_SICKLE, "Emerald Sickle");
+        addItem(PracticalItems.EMERALD_SWORD, "Emerald Sword");
+        addItem(PracticalItems.EMERALD_SPEAR, "Emerald Spear");
+        addItem(PracticalItems.EMERALD_PICKAXE, "Emerald Pickaxe");
+        addItem(PracticalItems.EMERALD_AXE, "Emerald Axe");
+        addItem(PracticalItems.EMERALD_SHOVEL, "Emerald Shovel");
+        addItem(PracticalItems.EMERALD_HOE, "Emerald Hoe");
+        addItem(PracticalItems.EMERALD_HELMET, "Emerald Helmet");
+        addItem(PracticalItems.EMERALD_CHESTPLATE, "Emerald Chestplate");
+        addItem(PracticalItems.EMERALD_LEGGINGS, "Emerald Leggings");
+        addItem(PracticalItems.EMERALD_BOOTS, "Emerald Boots");
+        addItem(PracticalItems.EMERALD_HORSE_ARMOR, "Emerald Horse Armor");
+        addItem(PracticalItems.EMERALD_NAUTILUS_ARMOR, "Emerald Nautilus Armor");
+        addItem(PracticalItems.EMERALD_HAMMER, "Emerald Hammer");
+        addItem(PracticalItems.EMERALD_EXCAVATOR, "Emerald Excavator");
+        addItem(PracticalItems.EMERALD_SICKLE, "Emerald Sickle");
 
-        addItem(PAItems.LAPIS_SWORD, "Lapis Sword");
-        addItem(PAItems.LAPIS_SPEAR, "Lapis Spear");
-        addItem(PAItems.LAPIS_PICKAXE, "Lapis Pickaxe");
-        addItem(PAItems.LAPIS_AXE, "Lapis Axe");
-        addItem(PAItems.LAPIS_SHOVEL, "Lapis Shovel");
-        addItem(PAItems.LAPIS_HOE, "Lapis Hoe");
-        addItem(PAItems.LAPIS_HELMET, "Lapis Helmet");
-        addItem(PAItems.LAPIS_CHESTPLATE, "Lapis Chestplate");
-        addItem(PAItems.LAPIS_LEGGINGS, "Lapis Leggings");
-        addItem(PAItems.LAPIS_BOOTS, "Lapis Boots");
-        addItem(PAItems.LAPIS_HAMMER, "Lapis Hammer");
-        addItem(PAItems.LAPIS_EXCAVATOR, "Lapis Excavator");
-        addItem(PAItems.LAPIS_SICKLE, "Lapis Sickle");
+        addItem(PracticalItems.LAPIS_SWORD, "Lapis Sword");
+        addItem(PracticalItems.LAPIS_SPEAR, "Lapis Spear");
+        addItem(PracticalItems.LAPIS_PICKAXE, "Lapis Pickaxe");
+        addItem(PracticalItems.LAPIS_AXE, "Lapis Axe");
+        addItem(PracticalItems.LAPIS_SHOVEL, "Lapis Shovel");
+        addItem(PracticalItems.LAPIS_HOE, "Lapis Hoe");
+        addItem(PracticalItems.LAPIS_HELMET, "Lapis Helmet");
+        addItem(PracticalItems.LAPIS_CHESTPLATE, "Lapis Chestplate");
+        addItem(PracticalItems.LAPIS_LEGGINGS, "Lapis Leggings");
+        addItem(PracticalItems.LAPIS_BOOTS, "Lapis Boots");
+        addItem(PracticalItems.LAPIS_HAMMER, "Lapis Hammer");
+        addItem(PracticalItems.LAPIS_EXCAVATOR, "Lapis Excavator");
+        addItem(PracticalItems.LAPIS_SICKLE, "Lapis Sickle");
 
-        addItem(PAItems.REDSTONE_SWORD, "Redstone Sword");
-        addItem(PAItems.REDSTONE_SPEAR, "Redstone Spear");
-        addItem(PAItems.REDSTONE_PICKAXE, "Redstone Pickaxe");
-        addItem(PAItems.REDSTONE_AXE, "Redstone Axe");
-        addItem(PAItems.REDSTONE_SHOVEL, "Redstone Shovel");
-        addItem(PAItems.REDSTONE_HOE, "Redstone Hoe");
-        addItem(PAItems.REDSTONE_HELMET, "Redstone Helmet");
-        addItem(PAItems.REDSTONE_CHESTPLATE, "Redstone Chestplate");
-        addItem(PAItems.REDSTONE_LEGGINGS, "Redstone Leggings");
-        addItem(PAItems.REDSTONE_BOOTS, "Redstone Boots");
-        addItem(PAItems.REDSTONE_HAMMER, "Redstone Hammer");
-        addItem(PAItems.REDSTONE_EXCAVATOR, "Redstone Excavator");
-        addItem(PAItems.REDSTONE_SICKLE, "Redstone Sickle");
+        addItem(PracticalItems.REDSTONE_SWORD, "Redstone Sword");
+        addItem(PracticalItems.REDSTONE_SPEAR, "Redstone Spear");
+        addItem(PracticalItems.REDSTONE_PICKAXE, "Redstone Pickaxe");
+        addItem(PracticalItems.REDSTONE_AXE, "Redstone Axe");
+        addItem(PracticalItems.REDSTONE_SHOVEL, "Redstone Shovel");
+        addItem(PracticalItems.REDSTONE_HOE, "Redstone Hoe");
+        addItem(PracticalItems.REDSTONE_HELMET, "Redstone Helmet");
+        addItem(PracticalItems.REDSTONE_CHESTPLATE, "Redstone Chestplate");
+        addItem(PracticalItems.REDSTONE_LEGGINGS, "Redstone Leggings");
+        addItem(PracticalItems.REDSTONE_BOOTS, "Redstone Boots");
+        addItem(PracticalItems.REDSTONE_HAMMER, "Redstone Hammer");
+        addItem(PracticalItems.REDSTONE_EXCAVATOR, "Redstone Excavator");
+        addItem(PracticalItems.REDSTONE_SICKLE, "Redstone Sickle");
 
-        addItem(PAItems.BASIC_MAGNET, "Basic Magnet");
-        addItem(PAItems.ADVANCED_MAGNET, "Advanced Magnet");
+        addItem(PracticalItems.BASIC_MAGNET, "Basic Magnet");
+        addItem(PracticalItems.ADVANCED_MAGNET, "Advanced Magnet");
 
-        addItem(PAItems.KEVLAR_FIBER, "Kevlar Fiber");
-        addItem(PAItems.KEVLAR_SHEET, "Kevlar Sheet");
+        addItem(PracticalItems.KEVLAR_FIBER, "Kevlar Fiber");
+        addItem(PracticalItems.KEVLAR_SHEET, "Kevlar Sheet");
 
-        addItem(PAItems.BALLISTIC_HELMET, "Ballistic Helmet");
-        addItem(PAItems.KEVLAR_VEST, "Kevlar Vest");
-        addItem(PAItems.KEVLAR_PANTS, "Kevlar Pants");
-        addItem(PAItems.KEVLAR_BOOTS, "Kevlar Boots");
+        addItem(PracticalItems.BALLISTIC_HELMET, "Ballistic Helmet");
+        addItem(PracticalItems.KEVLAR_VEST, "Kevlar Vest");
+        addItem(PracticalItems.KEVLAR_PANTS, "Kevlar Pants");
+        addItem(PracticalItems.KEVLAR_BOOTS, "Kevlar Boots");
 
-        addItem(PAItems.BASIC_BACKPACK, "Basic Backpack");
-        addItem(PAItems.REINFORCED_BACKPACK, "Reinforced Backpack");
+        addItem(PracticalItems.BASIC_BACKPACK, "Basic Backpack");
+        addItem(PracticalItems.REINFORCED_BACKPACK, "Reinforced Backpack");
 
-        addItem(PAItems.BASIC_QUIVER, "Basic Quiver");
-        addItem(PAItems.REINFORCED_QUIVER, "Reinforced Quiver");
+        addItem(PracticalItems.BASIC_QUIVER, "Basic Quiver");
+        addItem(PracticalItems.REINFORCED_QUIVER, "Reinforced Quiver");
 
         add("item.practical_additions.quiver.empty", "Empty");
         add("item.practical_additions.quiver.empty.description", "Can Hold Mixed Stacks Of Arrows");
         add("item.practical_additions.quiver.full", "Full");
 
-        addItem(PAItems.KEVLAR_SHIELD, "Kevlar Shield");
+        addItem(PracticalItems.KEVLAR_SHIELD, "Kevlar Shield");
 
         add("tooltip."  + PracticalAdditions.MODID + ".kevlar.projectile_protection", "Reduces damage from projectiles");
 
@@ -233,7 +233,7 @@ public class PALanguageProvider extends LanguageProvider {
         add("key.categories.practical_additions.main", "Practical Additions");
         add("key.practical_additions.open_backpack", "Open Backpack");
 
-        addItem(PAItems.LEAD_DIVING_BELT, "Lead Diving Belt");
+        addItem(PracticalItems.LEAD_DIVING_BELT, "Lead Diving Belt");
 
         add("tooltip.practical_additions.diving_belt.state", "State: ");
         add("tooltip.practical_additions.diving_belt.on", "ON");

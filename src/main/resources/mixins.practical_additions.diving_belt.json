@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.danako.practical_additions.feature.gadget.diving_belt.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "EntitySwimPoseMixin",
+    "LivingFluidTravelMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

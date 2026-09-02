@@ -36,7 +36,13 @@ ordering = "AFTER"
 side = "BOTH"
 
 [[mixins]]
-config = "mixins.practical_additions.json"
+config = "mixins.practical_additions.diving_belt.json"
+
+[[mixins]]
+config = "mixins.practical_additions.aoe_tools.json"
+
+[[mixins]]
+config = "mixins.practical_additions.audio.json"
 
 [[mixins]]
 config = "mixins.practical_additions.client.json"

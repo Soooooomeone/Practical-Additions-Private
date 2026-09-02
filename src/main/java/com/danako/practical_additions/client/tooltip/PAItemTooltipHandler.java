@@ -1,7 +1,7 @@
 package com.danako.practical_additions.client.tooltip;
 
 import com.danako.practical_additions.PracticalAdditions;
-import com.danako.practical_additions.config.PAConfig;
+import com.danako.practical_additions.config.PracticalConfig;
 import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
@@ -66,7 +66,7 @@ public class PAItemTooltipHandler {
 
     @SubscribeEvent
     public static void onItemTooltip(ItemTooltipEvent event) {
-        if (!PAConfig.ENABLE_DEBUG_TOOLTIPS.get()) {
+        if (!PracticalConfig.ENABLE_DEBUG_TOOLTIPS.get()) {
             return;
         }
 
@@ -84,7 +84,7 @@ public class PAItemTooltipHandler {
         Identifier id = BuiltInRegistries.ITEM.getKey(stack.getItem());
         tooltip.add(Component.translatable(REGISTRY_NAME_KEY, id.toString()).withStyle(ChatFormatting.GRAY));
 
-        if (PAConfig.SHOW_TAGS.get()) {
+        if (PracticalConfig.SHOW_TAGS.get()) {
             List<TagKey<Item>> tags = stack.getTags().toList();
             tooltip.add(Component.translatable(TAGS_KEY).withStyle(ChatFormatting.GRAY));
             if (tags.isEmpty()) {
@@ -96,7 +96,7 @@ public class PAItemTooltipHandler {
             }
         }
 
-        if (PAConfig.SHOW_ITEM_PROPERTIES.get()) {
+        if (PracticalConfig.SHOW_ITEM_PROPERTIES.get()) {
             tooltip.add(Component.translatable(PROPERTIES_KEY).withStyle(ChatFormatting.GRAY));
             appendItemProperties(stack, tooltip);
         }
@@ -109,7 +109,7 @@ public class PAItemTooltipHandler {
     private static void appendItemProperties(ItemStack stack, List<Component> tooltip) {
         Item item = stack.getItem();
 
-        if (PAConfig.SHOW_PROP_GENERAL.get()) {
+        if (PracticalConfig.SHOW_PROP_GENERAL.get()) {
             addProp(tooltip, PROP_MAX_STACK_SIZE_KEY, stack.getMaxStackSize());
 
             if (stack.isDamageableItem()) {
@@ -124,14 +124,14 @@ public class PAItemTooltipHandler {
             }
         }
 
-        if (PAConfig.SHOW_PROP_ENCHANTABILITY.get()) {
+        if (PracticalConfig.SHOW_PROP_ENCHANTABILITY.get()) {
             Enchantable enchantable = stack.get(DataComponents.ENCHANTABLE);
             if (enchantable != null) {
                 addProp(tooltip, PROP_ENCHANTABILITY_KEY, enchantable.value());
             }
         }
 
-        if (PAConfig.SHOW_PROP_COMBAT.get()) {
+        if (PracticalConfig.SHOW_PROP_COMBAT.get()) {
             ItemAttributeModifiers modifiers = stack.get(DataComponents.ATTRIBUTE_MODIFIERS);
             if (modifiers != null) {
                 for (ItemAttributeModifiers.Entry entry : modifiers.modifiers()) {
@@ -144,14 +144,14 @@ public class PAItemTooltipHandler {
             }
         }
 
-        if (PAConfig.SHOW_PROP_TOOL.get()) {
+        if (PracticalConfig.SHOW_PROP_TOOL.get()) {
             Tool tool = stack.get(DataComponents.TOOL);
             if (tool != null) {
                 addProp(tooltip, PROP_MINING_SPEED_KEY, tool.defaultMiningSpeed());
             }
         }
 
-        if (PAConfig.SHOW_PROP_FOOD.get()) {
+        if (PracticalConfig.SHOW_PROP_FOOD.get()) {
             FoodProperties food = stack.get(DataComponents.FOOD);
             if (food != null) {
                 addProp(tooltip, PROP_NUTRITION_KEY, food.nutrition());
@@ -159,7 +159,7 @@ public class PAItemTooltipHandler {
             }
         }
 
-        if (PAConfig.SHOW_PROP_BLOCK.get() && item instanceof BlockItem blockItem) {
+        if (PracticalConfig.SHOW_PROP_BLOCK.get() && item instanceof BlockItem blockItem) {
             Block block = blockItem.getBlock();
             BlockState state = block.defaultBlockState();
 

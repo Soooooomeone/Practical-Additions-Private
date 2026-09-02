@@ -1,6 +1,6 @@
 package com.danako.practical_additions.datagen.worldgen;
 
-import com.danako.practical_additions.init.PABlocks;
+import com.danako.practical_additions.core.PracticalBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.HolderSet;
@@ -30,9 +30,9 @@ public class PAWorldGenProvider {
     public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder().add(Registries.CONFIGURED_FEATURE, PAWorldGenProvider::registerConfiguredFeatures).add(Registries.PLACED_FEATURE, PAWorldGenProvider::registerPlacedFeatures).add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, PAWorldGenProvider::registerBiomeModifiers);
 
     private static void registerConfiguredFeatures(BootstrapContext<ConfiguredFeature<?, ?>> context) {
-        context.register(PAConfiguredFeatures.LEAD_ORE, new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(List.of(OreConfiguration.target(new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES), PABlocks.LEAD_ORE.get().defaultBlockState()), OreConfiguration.target(new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES), PABlocks.DEEPSLATE_LEAD_ORE.get().defaultBlockState())), 9)));
+        context.register(PAConfiguredFeatures.LEAD_ORE, new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(List.of(OreConfiguration.target(new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES), PracticalBlocks.LEAD_ORE.get().defaultBlockState()), OreConfiguration.target(new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES), PracticalBlocks.DEEPSLATE_LEAD_ORE.get().defaultBlockState())), 9)));
 
-        context.register(PAConfiguredFeatures.COBALT_ORE, new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(List.of(OreConfiguration.target(new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES), PABlocks.COBALT_ORE.get().defaultBlockState()), OreConfiguration.target(new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES), PABlocks.DEEPSLATE_COBALT_ORE.get().defaultBlockState())), 10)));
+        context.register(PAConfiguredFeatures.COBALT_ORE, new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(List.of(OreConfiguration.target(new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES), PracticalBlocks.COBALT_ORE.get().defaultBlockState()), OreConfiguration.target(new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES), PracticalBlocks.DEEPSLATE_COBALT_ORE.get().defaultBlockState())), 10)));
     }
 
 

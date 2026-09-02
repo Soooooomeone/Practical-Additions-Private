@@ -1,6 +1,6 @@
 package com.danako.practical_additions.mixin.client;
 
-import com.danako.practical_additions.common.item.cobalt_bow.CobaltBowItem;
+import com.danako.practical_additions.material.cobalt.CobaltBowItem;
 import net.minecraft.client.player.AbstractClientPlayer;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;

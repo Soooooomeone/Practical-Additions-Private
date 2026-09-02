@@ -1,8 +1,8 @@
 package com.danako.practical_additions.client.tooltip;
 
 import com.danako.practical_additions.PracticalAdditions;
-import com.danako.practical_additions.client.item.quiver.ClientQuiverTooltip;
-import com.danako.practical_additions.common.item.quiver.QuiverTooltip;
+import com.danako.practical_additions.feature.gadget.quiver.QuiverTooltip;
+import com.danako.practical_additions.feature.gadget.quiver.client.ClientQuiverTooltip;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;

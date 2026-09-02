@@ -1,7 +1,7 @@
 package com.danako.practical_additions.client;
 
 import com.danako.practical_additions.PracticalAdditions;
-import com.danako.practical_additions.network.backpack.OpenBackpackPayload;
+import com.danako.practical_additions.feature.gadget.backpack.network.OpenBackpackPayload;
 import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.resources.Identifier;

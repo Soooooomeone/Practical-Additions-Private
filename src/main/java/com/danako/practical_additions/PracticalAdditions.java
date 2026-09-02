@@ -1,17 +1,13 @@
 package com.danako.practical_additions;
 
 
-import com.danako.practical_additions.client.inventory.backpack.PABackpackClient;
-import com.danako.practical_additions.config.PAConfig;
+import com.danako.practical_additions.combat.PAArmorEffectsHandler;
+import com.danako.practical_additions.config.PracticalConfig;
+import com.danako.practical_additions.core.*;
 import com.danako.practical_additions.datagen.DataGenerators;
-import com.danako.practical_additions.init.PABlocks;
-import com.danako.practical_additions.init.PAItems;
-import com.danako.practical_additions.init.creative_tab.PracticalTabs;
-import com.danako.practical_additions.init.data_components.BackpackComponents;
-import com.danako.practical_additions.init.data_components.PADataComponents;
-import com.danako.practical_additions.init.event_handler.PAEventsHandler;
-import com.danako.practical_additions.inventory.PAMenuTypes;
-import com.danako.practical_additions.network.backpack.BackpackNetworking;
+import com.danako.practical_additions.feature.gadget.backpack.BackpackContents;
+import com.danako.practical_additions.feature.gadget.backpack.client.PABackpackClient;
+import com.danako.practical_additions.feature.gadget.backpack.network.BackpackNetworking;
 import com.mojang.logging.LogUtils;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTab;
@@ -43,17 +39,17 @@ public class PracticalAdditions {
         ITEMS.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
         PADataComponents.register(modEventBus);
-        BackpackComponents.register(modEventBus);
-        PAMenuTypes.register(modEventBus);
+        BackpackContents.register(modEventBus);
+        PracticalMenuTypes.register(modEventBus);
         PABackpackClient.register(modEventBus);
-        PABlocks.register();
-        PAItems.register();
+        PracticalBlocks.register();
+        PracticalItems.register();
         PracticalTabs.register(modEventBus);
-        PAEventsHandler.register();
+        PAArmorEffectsHandler.register();
 
         NeoForge.EVENT_BUS.register(this);
 
-        modContainer.registerConfig(ModConfig.Type.COMMON, PAConfig.COMMON_SPEC);
+        modContainer.registerConfig(ModConfig.Type.COMMON, PracticalConfig.COMMON_SPEC);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {

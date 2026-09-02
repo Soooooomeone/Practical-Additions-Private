@@ -1,7 +1,7 @@
 package com.danako.practical_additions.datagen.model;
 
 import com.danako.practical_additions.PracticalAdditions;
-import com.danako.practical_additions.init.PAItems;
+import com.danako.practical_additions.core.PracticalItems;
 import net.minecraft.client.data.models.EquipmentAssetProvider;
 import net.minecraft.client.resources.model.EquipmentClientInfo;
 import net.minecraft.data.PackOutput;
@@ -23,7 +23,7 @@ public class PAEquipmentAssetProvider extends EquipmentAssetProvider {
     protected void registerModels(BiConsumer<ResourceKey<EquipmentAsset>, EquipmentClientInfo> output) {
         Identifier leadTexture = Identifier.fromNamespaceAndPath(PracticalAdditions.MODID, "lead");
 
-        output.accept(PAItems.LEAD_ARMOR_ASSET, EquipmentClientInfo.builder()
+        output.accept(PracticalItems.LEAD_ARMOR_ASSET, EquipmentClientInfo.builder()
 
                 .addLayers(EquipmentClientInfo.LayerType.HUMANOID, new EquipmentClientInfo.Layer(leadTexture, Optional.empty(), false))
 
@@ -35,11 +35,11 @@ public class PAEquipmentAssetProvider extends EquipmentAssetProvider {
 
         Identifier cobaltTexture = Identifier.fromNamespaceAndPath(PracticalAdditions.MODID, "cobalt");
 
-        output.accept(PAItems.COBALT_ARMOR_ASSET, EquipmentClientInfo.builder().addLayers(EquipmentClientInfo.LayerType.HUMANOID, new EquipmentClientInfo.Layer(cobaltTexture, Optional.empty(), false)).addLayers(EquipmentClientInfo.LayerType.HUMANOID_LEGGINGS, new EquipmentClientInfo.Layer(cobaltTexture, Optional.empty(), false)).addLayers(EquipmentClientInfo.LayerType.HORSE_BODY, new EquipmentClientInfo.Layer(cobaltTexture, Optional.empty(), false)).addLayers(EquipmentClientInfo.LayerType.NAUTILUS_BODY, new EquipmentClientInfo.Layer(cobaltTexture, Optional.empty(), false)).build());
+        output.accept(PracticalItems.COBALT_ARMOR_ASSET, EquipmentClientInfo.builder().addLayers(EquipmentClientInfo.LayerType.HUMANOID, new EquipmentClientInfo.Layer(cobaltTexture, Optional.empty(), false)).addLayers(EquipmentClientInfo.LayerType.HUMANOID_LEGGINGS, new EquipmentClientInfo.Layer(cobaltTexture, Optional.empty(), false)).addLayers(EquipmentClientInfo.LayerType.HORSE_BODY, new EquipmentClientInfo.Layer(cobaltTexture, Optional.empty(), false)).addLayers(EquipmentClientInfo.LayerType.NAUTILUS_BODY, new EquipmentClientInfo.Layer(cobaltTexture, Optional.empty(), false)).build());
 
         Identifier kevlarTexture = Identifier.fromNamespaceAndPath(PracticalAdditions.MODID, "kevlar");
 
-        output.accept(PAItems.KEVLAR_ARMOR_ASSET, EquipmentClientInfo.builder()
+        output.accept(PracticalItems.KEVLAR_ARMOR_ASSET, EquipmentClientInfo.builder()
 
                 .addLayers(EquipmentClientInfo.LayerType.HUMANOID, new EquipmentClientInfo.Layer(kevlarTexture, Optional.empty(), false))
 
@@ -47,14 +47,14 @@ public class PAEquipmentAssetProvider extends EquipmentAssetProvider {
 
         Identifier emeraldTexture = Identifier.fromNamespaceAndPath(PracticalAdditions.MODID, "emerald");
 
-        output.accept(PAItems.EMERALD_ARMOR_ASSET, EquipmentClientInfo.builder().addLayers(EquipmentClientInfo.LayerType.HUMANOID, new EquipmentClientInfo.Layer(emeraldTexture, Optional.empty(), false)).addLayers(EquipmentClientInfo.LayerType.HUMANOID_LEGGINGS, new EquipmentClientInfo.Layer(emeraldTexture, Optional.empty(), false)).addLayers(EquipmentClientInfo.LayerType.HORSE_BODY, new EquipmentClientInfo.Layer(emeraldTexture, Optional.empty(), false)).addLayers(EquipmentClientInfo.LayerType.NAUTILUS_BODY, new EquipmentClientInfo.Layer(emeraldTexture, Optional.empty(), false)).build());
+        output.accept(PracticalItems.EMERALD_ARMOR_ASSET, EquipmentClientInfo.builder().addLayers(EquipmentClientInfo.LayerType.HUMANOID, new EquipmentClientInfo.Layer(emeraldTexture, Optional.empty(), false)).addLayers(EquipmentClientInfo.LayerType.HUMANOID_LEGGINGS, new EquipmentClientInfo.Layer(emeraldTexture, Optional.empty(), false)).addLayers(EquipmentClientInfo.LayerType.HORSE_BODY, new EquipmentClientInfo.Layer(emeraldTexture, Optional.empty(), false)).addLayers(EquipmentClientInfo.LayerType.NAUTILUS_BODY, new EquipmentClientInfo.Layer(emeraldTexture, Optional.empty(), false)).build());
 
         Identifier lapisTexture = Identifier.fromNamespaceAndPath(PracticalAdditions.MODID, "lapis");
 
-        output.accept(PAItems.LAPIS_ARMOR_ASSET, EquipmentClientInfo.builder().addLayers(EquipmentClientInfo.LayerType.HUMANOID, new EquipmentClientInfo.Layer(lapisTexture, Optional.empty(), false)).addLayers(EquipmentClientInfo.LayerType.HUMANOID_LEGGINGS, new EquipmentClientInfo.Layer(lapisTexture, Optional.empty(), false)).build());
+        output.accept(PracticalItems.LAPIS_ARMOR_ASSET, EquipmentClientInfo.builder().addLayers(EquipmentClientInfo.LayerType.HUMANOID, new EquipmentClientInfo.Layer(lapisTexture, Optional.empty(), false)).addLayers(EquipmentClientInfo.LayerType.HUMANOID_LEGGINGS, new EquipmentClientInfo.Layer(lapisTexture, Optional.empty(), false)).build());
 
         Identifier redstoneTexture = Identifier.fromNamespaceAndPath(PracticalAdditions.MODID, "redstone");
 
-        output.accept(PAItems.REDSTONE_ARMOR_ASSET, EquipmentClientInfo.builder().addLayers(EquipmentClientInfo.LayerType.HUMANOID, new EquipmentClientInfo.Layer(redstoneTexture, Optional.empty(), false)).addLayers(EquipmentClientInfo.LayerType.HUMANOID_LEGGINGS, new EquipmentClientInfo.Layer(redstoneTexture, Optional.empty(), false)).build());
+        output.accept(PracticalItems.REDSTONE_ARMOR_ASSET, EquipmentClientInfo.builder().addLayers(EquipmentClientInfo.LayerType.HUMANOID, new EquipmentClientInfo.Layer(redstoneTexture, Optional.empty(), false)).addLayers(EquipmentClientInfo.LayerType.HUMANOID_LEGGINGS, new EquipmentClientInfo.Layer(redstoneTexture, Optional.empty(), false)).build());
     }
 }

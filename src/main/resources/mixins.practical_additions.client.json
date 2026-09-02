@@ -3,9 +3,7 @@
   "package": "com.danako.practical_additions.mixin.client",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "AbstractClientPlayerFovMixin",
-    "ClientLevelMixin",
-    "SoundEngineOcclusionMixin"
+    "AbstractClientPlayerFovMixin"
   ],
   "injectors": {
     "defaultRequire": 1
